@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;1,100;1,200&family=Explora&family=Karla:ital,wght@0,200;0,300;0,400;1,200&family=Lora:ital@0;1&display=swap");
+/*============================================*/
+/*== BASELINE CSS ==========================================*/
+/*============================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  color: #f8efe5;
+  background-color: #282726;
+  font-family: "Lora", serif;
+  font-size: 16px;
+	line-height: 1.4;
+  
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #f8efe5;
+}
+
+
+/*============================================*/
+/*== HEADER ==========================================*/
+/*============================================*/
+.page-header {
+	height:  50px;
+	width: 100%;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: left;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1px solid #dfdfdf;
+}
+
+.logo {
+  width: 60px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: left;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+nav a {
+  font-size: 14px;
+}
+
+/*============================================*/
+/*== HERO SECTION ==========================================*/
+/*============================================*/
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 50px;
+
+}
+
+h1 {
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-family: 'Exo', sans-serif;
+  font-size: 69px;
+  font-weight: 500px;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Exo', sans-serif;
+  font-size: 69px;
+  font-weight: 500px;
+  color: #999;
+  text-align: left;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #f8efe5;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 13px;
+  padding: 12px 16px;
+  color: #f8efe5;
+}
+
+.socials ul {
+  display: flex;
+  margin: 15px 0;
+}
+
+.socials li {
+margin-right: 15px;
+}
+
+
+/*============================================*/
+/*== ABOUT ME ==========================================*/
+/*============================================*/
+#about-me {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  color: #fcf2ef;
+  background-color: #131313;
+
+}
+
+.about-me {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro {
+  width: 50%;
+}
+
+.intro h2 {
+  font-family: "Exo", sans-serif;
+  font-size: 6em;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.intro h3 {
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.intro p{
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.skills-list i::after{
+content: '|';
+margin-left: 15px;
+margin-right: 15px;
+}
+.skills-list i:last-child::after{
+  content: '.';
+  display: none;
+  }
+.fab {
+  margin-right: 5px;
+  font-weight: 700;
+}
+.joyce {
+  width: 40%;
+}
+.joyce img {
+  width: 100%;
+}
+
+/*============================================*/
+/*== MY WORK ==========================================*/
+/*============================================*/
+#work {
+  color: #fafafa;
+  background-color: #131313;
+}
+
+.projects{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-list {
+  color: #fcf2ef;
+}
+
+/*============================================*/
+/*== FOOTER ==========================================*/
+/*============================================*/
+
+footer {
+  background-color: #000000;
+}
+footer p {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 11px;
+  color: #fafafa;
+}
