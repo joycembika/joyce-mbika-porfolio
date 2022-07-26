@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -34,7 +34,7 @@ body {
   font-family: "Lora", serif;
   font-size: 16px;
 	line-height: 1.4;
-  
+
 }
 ol, ul {
 	list-style: none;
@@ -234,23 +234,37 @@ margin-right: 15px;
   background-color: #131313;
 }
 
-.projects{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+.projects-grid{
+  display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 15px;
+	margin: 50px 0px;
 
+}
+img {
+	width: 100%;
+}
 .project {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+	background-color: #000;
+	border-radius: 10px;
 }
-
+.project-info {
+	padding: 32px 28px;
+}
 .skills-list {
   color: #fcf2ef;
 }
-
+.project-name {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 24.2px;
+	margin-bottom:10px;
+}
+.tech-stack li {
+	font-size: 12px;
+	line-height: 21px;
+	margin-bottom: 10px;
+}
 /*============================================*/
 /*== FOOTER ==========================================*/
 /*============================================*/
