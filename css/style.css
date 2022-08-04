@@ -232,6 +232,7 @@ margin-right: 15px;
 #work {
   color: #fafafa;
   background-color: #131313;
+	padding-bottom: 100px;
 }
 
 .projects-grid{
@@ -260,10 +261,29 @@ img {
 	line-height: 24.2px;
 	margin-bottom:10px;
 }
+.tech-stack ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
 .tech-stack li {
 	font-size: 12px;
 	line-height: 21px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+/*============================================*/
+/*== FOOTER ==========================================*/
+/*============================================*/
+#contact {
+	padding: 100px 0px;
+}
+.contact-info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
 }
 /*============================================*/
 /*== FOOTER ==========================================*/
@@ -271,9 +291,11 @@ img {
 
 footer {
   background-color: #000000;
+	padding: 10px 0px;
 }
 footer p {
   font-family: "Roboto Flex", sans-serif;
   font-size: 11px;
   color: #fafafa;
+	text-align: center;
 }
