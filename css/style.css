@@ -48,11 +48,6 @@ table {
 	border-spacing: 0;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   color: #000205;
@@ -68,13 +63,17 @@ body {
   font-size: 16px;
 	line-height: 1.4;
 }
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 /*============================================*/
 /*== HEADER ==========================================*/
 /*============================================*/
 .page-header {
 	height:  50px;
-	width: 100%;
+	max-width: 100%;
 }
 
 nav {
@@ -82,8 +81,10 @@ nav {
   display: flex;
   flex-direction: left;
   justify-content: space-between;
+	column-gap: 20%;
   align-items: center;
   border-bottom:1px solid #000205;
+	box-sizing: border-box;
 }
 img {
   width: 100%;
@@ -103,6 +104,7 @@ img {
 
 nav a {
   font-size: 14px;
+	text-transform: uppercase;
 }
 
 
@@ -128,29 +130,31 @@ nav a {
 .hero p {
 	font-style: italic;
 	font-weight: 200;
+	text-align: center;
 }
 h1 {
   font-family: 'Exo', sans-serif;
-  font-size: 6em;
+  font-size: 6rem;
 	font-weight: 100;
-  text-align: left;
+  text-align: center;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 }
 
 h2 {
   font-family: 'Exo', sans-serif;
-  font-size: 4.5em;
+  font-size: 3.75rem;
   font-weight: 200;
   text-align: center;
 }
 
 h3 {
   font-family: 'Exo', sans-serif;
-  font-size: 69px;
-  font-weight: 500px;
+  font-size: 2rem;
+	font-weight: 200;
   color: #999;
   text-align: left;
+	text-transform: uppercase;
 }
 .location {
 	margin-top: 10px;
@@ -203,12 +207,7 @@ margin-right: 15px;
 }
 
 .intro h3 {
-  font-family: "Exo", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
   margin: 20px 0;
-  color: #fffdfa;
-	text-transform: uppercase;
 }
 
 .intro p{
@@ -235,6 +234,8 @@ margin-right: 15px;
 .joyce {
   width: 30%;
 	overflow: hidden;
+	border: 1px solid #000;
+  border-radius: 5px;
 }
 
 /*============================================*/
@@ -273,12 +274,6 @@ margin-right: 15px;
 .skills-list {
   color: #fcf2ef;
 }
-.project-name {
-	font-size: 22px;
-	font-weight: 600;
-	line-height: 24.2px;
-	margin-bottom:10px;
-}
 .tech-stack ul {
 	display: flex;
 	flex-direction: row;
@@ -298,6 +293,9 @@ margin-right: 15px;
 	padding: 100px 0px;
 	background-color: #000205;
 	color: #fffdfa;
+}
+#contact p{
+	text-align: center;
 }
  #contact a{
 	 color: #fffdfa
@@ -324,9 +322,37 @@ footer p {
 	text-align: center;
 }
 
-@media (max-width: 75em){
-.page-header {
-	width: 100vh;
+/* ==================================== */
+/* Media queries ====================== */
+/* ==================================== */
+@media (max-width: 75em) {
+	.wrapper {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
 }
-
+@media (max-width: 36.125em) {
+	h1 {
+		line-height: 100px;
+	}
+	.logo {
+		width: 15%;
+	}
+	.nav-links {
+		width: 85%;
+	}
+	.about-me {
+		flex-direction: column;
+		column-gap: 0;
+		row-gap: 30px;
+		justify-content: center;
+		align-items: center;
+	}
+	.intro{
+		width: 100%;
+	}
+	.joyce {
+		width: 50%;
+	}
 }
