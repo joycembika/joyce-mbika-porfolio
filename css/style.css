@@ -326,6 +326,17 @@ button {
   margin-bottom: 100px;
 }
 
+#freelanceProjects {
+  color: #000205;
+  background-color: #fffdfa;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+#freelanceProjects h2 {
+  margin-bottom: 100px;
+}
+
 .projects-grid {
   color: #fffdfa;
   display: grid;
