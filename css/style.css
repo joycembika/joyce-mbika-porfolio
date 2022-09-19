@@ -166,7 +166,10 @@ nav {
   box-sizing: border-box;
 }
 img {
+  max-width: 100%;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .logo {
   width: 10%;
@@ -226,9 +229,9 @@ h2 {
 
 h3 {
   font-family: "Exo", sans-serif;
-  font-size: 2rem;
-  font-weight: 200;
-  color: #999;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #000205;
   text-align: left;
   text-transform: uppercase;
 }
@@ -326,30 +329,37 @@ button {
   margin-bottom: 100px;
 }
 
-#freelanceProjects {
+#work p {
+  color: #656563;
   display: none;
 }
-
-.projects-grid {
-  color: #fffdfa;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
-  margin-bottom: 50px;
-}
-.projects-grid a {
-  color: #fffdfa;
-}
-
 .project {
-  background-color: #000;
-  border-radius: 10px;
+  padding: 1em 1em;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 15px;
+  column-gap: 15px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.project-image {
+  height: 200px;
+  background-color: #fffdfa;
+}
+
 .project-info {
-  padding: 32px 28px;
+  padding-top: 1em;
 }
-.skills-list {
-  color: #fcf2ef;
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .tech-stack ul {
   display: flex;
@@ -359,9 +369,28 @@ button {
 .tech-stack li {
   font-size: 12px;
   line-height: 21px;
-  margin-bottom: 20px;
-  margin-right: 5px;
-  margin-top: 20px;
+}
+
+hr {
+  border: 0.75px solid #999;
+}
+.africangirl {
+  background-color: rgba(102, 51, 0, 0.01);
+}
+.humi {
+  background-color: rgba(0, 104, 116, 0.05);
+}
+.neneng {
+  background-color: rgba(250, 95, 26, 0.01);
+}
+.vimez {
+  background-color: rgba(221, 51, 51, 0.05);
+}
+.klassie {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.arrey {
+  background-color: rgba(247, 189, 0, 0.05);
 }
 /*============================================*/
 /*== CONTACT ==========================================*/
