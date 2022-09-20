@@ -143,7 +143,7 @@ body {
   line-height: 1.4;
 }
 .wrapper {
-  max-width: 1170px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -168,8 +168,7 @@ nav {
 img {
   max-width: 100%;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
 }
 .logo {
   width: 10%;
@@ -229,8 +228,9 @@ h2 {
 
 h3 {
   font-family: "Exo", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 22px;
+  line-height: 48px;
+  font-weight: 400;
   color: #000205;
   text-align: left;
   text-transform: uppercase;
@@ -307,6 +307,7 @@ button {
 .fab {
   margin-right: 5px;
   font-weight: 700;
+  font-size: 25px;
 }
 .joyce {
   width: 30%;
@@ -331,13 +332,8 @@ button {
 
 #work p {
   color: #656563;
-  display: none;
 }
-.project {
-  padding: 1em 1em;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -346,14 +342,23 @@ button {
   position: relative;
   margin-top: 50px;
 }
-
-.project-image {
-  height: 200px;
-  background-color: #fffdfa;
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: start;
+  padding: 1.5em 1.5em;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.project-info {
-  padding-top: 1em;
+.project-image {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.project-details {
+  margin-bottom: 22px;
 }
 .tech-stack {
   display: flex;
@@ -370,27 +375,9 @@ button {
   font-size: 12px;
   line-height: 21px;
 }
-
-hr {
-  border: 0.75px solid #999;
-}
-.africangirl {
-  background-color: rgba(102, 51, 0, 0.01);
-}
-.humi {
-  background-color: rgba(0, 104, 116, 0.05);
-}
-.neneng {
-  background-color: rgba(250, 95, 26, 0.01);
-}
-.vimez {
-  background-color: rgba(221, 51, 51, 0.05);
-}
-.klassie {
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.arrey {
-  background-color: rgba(247, 189, 0, 0.05);
+.fa-external-link-alt {
+  font-size: large;
+  font-weight: thin;
 }
 /*============================================*/
 /*== CONTACT ==========================================*/
