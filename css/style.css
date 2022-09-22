@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Playfair+Display:ital@0;1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*============================================*/
 /*== BASELINE CSS ==========================================*/
@@ -136,15 +136,16 @@ a {
 }
 
 body {
-  color: #000205;
-  background-color: #fffdfa;
-  font-family: "Playfair Display", serif;
+  color: #141517;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 2em;
 }
 
 /*============================================*/
@@ -153,6 +154,7 @@ body {
 .page-header {
   height: 50px;
   max-width: 100%;
+  padding: 0 2em;
 }
 
 nav {
@@ -162,7 +164,7 @@ nav {
   justify-content: space-between;
   column-gap: 20%;
   align-items: center;
-  border-bottom: 1px solid #000205;
+  border-bottom: 1px solid rgb(153,157,158);
   box-sizing: border-box;
 }
 img {
@@ -182,10 +184,22 @@ img {
   align-items: center;
   column-gap: 20px;
 }
+.nav-link:hover {
+  background-color: #141517;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  color: #fff;
+}
 
 nav a {
   font-size: 14px;
   text-transform: uppercase;
+}
+a:hover{
+  color: #fff;
+}
+hr {
+  margin: 75px 0;
 }
 
 /*============================================*/
@@ -202,38 +216,45 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;
 }
 .hero p {
-  font-style: italic;
-  font-weight: 200;
-  text-align: center;
+  line-height: 26px;
+  width: 540px;
+  max-width: 540px;
+  text-align: left;
+  margin: 20px 0;;
 }
 h1 {
-  font-family: "Exo", sans-serif;
+  color: #1c1d20;
+  font-family: "Inter", sans-serif;
   font-size: 6rem;
-  font-weight: 100;
-  text-align: center;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+  font-weight: 500;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 h2 {
-  font-family: "Exo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 3.75rem;
-  font-weight: 200;
-  text-align: center;
+  font-weight: 450;
+  text-align: left;
+  line-height: 1.065;
+  margin-bottom: 50px;
+}
+#hero h2 {
+  color: rgb(153,157,158);
 }
 
 h3 {
-  font-family: "Exo", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 22px;
   line-height: 48px;
   font-weight: 400;
   color: #000205;
   text-align: left;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .location {
   margin-top: 10px;
@@ -247,6 +268,11 @@ button {
   font-size: 13px;
   padding: 12px 16px;
   color: #000205;
+}
+button:hover {
+  color: #fff;
+  background: #141517;
+  
 }
 
 .socials ul {
@@ -264,8 +290,7 @@ button {
 #about-me {
   width: 100%;
   box-sizing: border-box;
-  color: #fffdfa;
-  background-color: #000205;
+  background-color: #f2f3f3;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -276,11 +301,11 @@ button {
   justify-content: space-between;
   align-items: flex-start;
   column-gap: 10%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .intro {
-  width: 70%;
+  width: 60%;
 }
 
 .intro h3 {
@@ -293,26 +318,23 @@ button {
 .skills-list {
   font-size: 14px;
   font-weight: 100;
+  margin-bottom: 20px;
 }
-.skills-list i::after {
-  content: "|";
-  margin-left: 15px;
-  margin-right: 15px;
+.skills-list ul {
+  column-count: 2;
 }
-.skills-list i:last-child::after {
-  content: ".";
-  display: none;
+.skills-list li {
+  padding: 10px 0;
 }
 
 .fab {
   margin-right: 5px;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 15px;
 }
 .joyce {
-  width: 30%;
+  width: 40%;
   overflow: hidden;
-  border: 1px solid #000;
   border-radius: 5px;
 }
 
@@ -326,10 +348,6 @@ button {
   padding-top: 100px;
 }
 
-#work h2 {
-  margin-bottom: 100px;
-}
-
 #work p {
   color: #656563;
 }
@@ -337,23 +355,21 @@ button {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  row-gap: 15px;
-  column-gap: 15px;
-  position: relative;
-  margin-top: 50px;
+  grid-auto-rows: 1fr;
+  grid-gap: 1rem;
 }
 .project {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-self: start;
+  justify-content:space-between;
   padding: 1.5em 1.5em;
   border-radius: 6px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
 .project-image {
-  width: 80px;
+  width: 100px;
   height: 50px;
   margin-bottom: 20px;
 }
@@ -374,17 +390,23 @@ button {
 .tech-stack li {
   font-size: 12px;
   line-height: 21px;
+  padding-right: 1rem;
 }
 .fa-external-link-alt {
   font-size: large;
   font-weight: thin;
+}
+.fa-external-link-alt:hover{
+  background-color: #141517;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 /*============================================*/
 /*== CONTACT ==========================================*/
 /*============================================*/
 #contact {
   padding: 100px 0px;
-  background-color: #000205;
+  background-color: #1c1d20;
   color: #fffdfa;
 }
 #contact p {
@@ -409,7 +431,6 @@ footer {
   padding: 10px 0px;
 }
 footer p {
-  font-family: "Roboto Flex", sans-serif;
   font-size: 11px;
   color: #fafafa;
   text-align: center;
@@ -427,13 +448,23 @@ footer p {
 }
 @media (max-width: 36.125em) {
   h1 {
-    line-height: 100px;
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+  }
+  hr{
+    margin: 50px 0;
   }
   .logo {
     width: 15%;
   }
   .nav-links {
     width: 85%;
+  }
+  .hero p {
+    max-width: 100%;
   }
   .about-me {
     flex-direction: column;
